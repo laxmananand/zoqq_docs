@@ -1,0 +1,91 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+/* :root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+} */
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* /* custom.css */
+/* src/css/custom.css */
+
+:root {
+  --ifm-color-primary: #1A73E8; /* Adjust to Zoqq brand color */
+  --ifm-font-family-base: 'Inter', sans-serif;
+  --ifm-font-size-base: 14px;
+  --ifm-heading-font-family: 'Inter', sans-serif;
+}
+
+.navbar__title {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.menu__link {
+  font-size: 15px;
+}
+
+.hero__title {
+  font-size: 2.5rem;
+}
+
+html[data-theme='dark'] {
+  --ifm-color-primary: #90caf9;
+}
+
+
+.navbar__title {
+  font-weight: 600;
+  font-size: 16px; /* Decrease navbar title */
+}
+
+.menu__link {
+  font-size: 14px; /* Sidebar/nav links */
+}
+
+.hero__title {
+  font-size: 2rem; /* Homepage hero title */
+}
+
+.markdown h1 {
+  font-size: 1.8rem;
+}
+
+.markdown h2 {
+  font-size: 1.5rem;
+}
+
+.markdown p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+
+.api-docs-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.api-docs-left, .api-docs-right {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .api-docs-container {
+    flex-direction: column;
+  }
+}
